@@ -6,7 +6,7 @@ function BirdDetail() {
   const [bird, setBird] = useState({});
 
   useEffect(() => {
-    fetch(`/birds/${id}`)
+    fetch(`/api/birds/${id}`)
       .then((r) => r.json())
       .then((bird) => setBird(bird));
 

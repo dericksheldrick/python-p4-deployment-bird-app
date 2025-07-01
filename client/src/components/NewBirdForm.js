@@ -7,7 +7,7 @@ function NewBirdForm({ onAddBird }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/birds", {
+    fetch("/api/birds", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

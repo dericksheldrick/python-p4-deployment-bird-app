@@ -8,7 +8,7 @@ function BirdPage() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("/birds")
+    fetch("/api/birds")
       .then((r) => r.json())
       .then((birdsArray) => {
         setBirds(birdsArray);

@@ -50,7 +50,7 @@ class Birds(Resource):
 
         return make_response(new_bird.to_dict(), 201)
 
-api.add_resource(Birds, '/birds')
+api.add_resource(Birds, '/api/birds')
 
 class BirdByID(Resource):
     
@@ -80,4 +80,4 @@ class BirdByID(Resource):
 
         return make_response('', 204)
 
-api.add_resource(BirdByID, '/birds/<int:id>')
+api.add_resource(BirdByID, '/api/birds/<int:id>')
